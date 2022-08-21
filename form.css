@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url('https://source.unsplash.com/1600x900/?Office forms');
+}
+
+#box {
+    width: 430px;
+    height: 350px;
+    margin-top: 80px;
+    box-shadow: 10px 10px black;
+    padding: 0px;
+    padding-bottom: .001px;
+    border-radius: 80px;
+    background-color: rgba(8, 8, 8, 0.671);
+}
+
+button {
+    font-weight: bold;
+    font-size: larger;
+    box-shadow: 5px 4px black;
+    background-color: rgb(95, 95, 200);
+    color: white;
+    border-radius: 10px;
+    width: 90px;
+    height: 35px;
+}
+
+div#tui {
+    width: 320px;
+    height: 470px;
+    padding: 30px;
+    box-shadow: 6px 8px black;
+
+    padding-bottom: 0.00002px;
+    text-align: center;
+    margin-top: 80px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: rgba(11, 11, 84, 0.625);
+}
+
+input {
+    border-radius: 6px;
+    height: 35px;
+    width: 270px;
+}
+
+@media  (max-width:370px){
+    #box{width: 150px;
+        height: 330px;
+        padding: 10px;
+        border-color: blue;
+        margin-top: 50px;}
+
+    }
+
+@media  (max-width:370px){
+    img{width: 230px;
+    height: 140px;
+margin: 8px;}
+        }

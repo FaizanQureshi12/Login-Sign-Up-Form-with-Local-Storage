@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Document</title>
+    <script src="form.js"></script>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+</head>
+
+<body style="color: white;">
+
+    <form onsubmit="doLogin(event)">
+        <fieldset id="box">
+            <center>
+                <h1 align="center">lOG IN</h1>
+                Email :&nbsp;
+                <input type="email" placeholder="abc@gmail.com" required id="email" maxlength="18"><br><br>
+                Password :
+                <input id="password" type="password" placeholder="Password " name="Password" required />
+
+                <span id="showPasswordButton" onclick="toggleShowPassword()" class="btn">
+                    <i class="fa-solid fa-eye"></i>
+                </span><br>
+                <br>
+                <a href="" style="color:violet;"> Forgot Password?</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button type="submit">Next</button><br><br>
+                <a href="sign up.html" style="color:violet;"> Create An Account</a><br>
+                <br>
+                <b id="error" style="color: red"></b>
+                <b id="result"></b>
+            </center>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

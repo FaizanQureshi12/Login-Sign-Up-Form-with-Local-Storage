@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Document</title>
+    <script src="form.js"></script>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body style="color: white;">
+    <div id="tui">
+        <form onsubmit="doSignup(event)">
+            <input type="text" placeholder="First Name" id="firstName" maxlength="20" required><br><br>
+            <input type="text" placeholder="Last Name" id="lastName" maxlength="20"><br><br>
+            Gender:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select width="100px" name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br>
+            <input type="email" placeholder="UserName @gmail.com" id="email" maxlength="18" required><br><br>
+            <input type="text" placeholder="Password" id="password" minlength="8" required><br><br>
+            <input type="text" placeholder="Confirm Password" id="rePassword" required><br>
+            <p style="color: white;">Use 8 or more characters with a <br>
+                mix of letters, numbers & symbols</p>
+            <button>Sign Up</button><br><br>
+            Already have an account? <a href="./index.html"><b> Login</b></a><br>
+
+            <b id="error" style="color: red"></b>
+            <b id="result"></b>
+        </form>
+    </div>
+
+</body>
+
+</html>
